@@ -84,7 +84,7 @@ public class AutomatedCurrentCourse
         public int? PageNumber { get; set; }
 
 
-	      /// <summary>
+	/// <summary>
         /// Foreign key to relate to the LMSPage table
         /// </summary>
         public int PageId { get; set; }
@@ -93,13 +93,13 @@ public class AutomatedCurrentCourse
         public bool ProgressWarningMessage { get; set; }
 
 
-	      public bool CourseProgressBar { get; set; }
+	public bool CourseProgressBar { get; set; }
 
 
-	      public bool CampProgressBar { get; set; }
+	public bool CampProgressBar { get; set; }
 
 
-	      public bool FailedAssignmentLock { get; set; }
+	public bool FailedAssignmentLock { get; set; }
 
 
         public DateTime LastActive { get; set; }
