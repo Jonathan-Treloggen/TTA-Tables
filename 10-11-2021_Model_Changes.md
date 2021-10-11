@@ -1,4 +1,4 @@
-#Existing Model changes:
+## Existing Model changes:
 
 ```c#
 public class LMSBootcamp
@@ -59,7 +59,7 @@ public class ApplicationUser
     }
 ```    
     
-#New Models
+## New Models
 
 ```c#
 public class AutomatedCurrentCourse
