@@ -1,5 +1,6 @@
-Existing Model changes:
+#Existing Model changes:
 
+```c#
 public class LMSBootcamp
     {
         /// <summary>
@@ -7,7 +8,9 @@ public class LMSBootcamp
         /// </summary>
         public bool Automated { get; set; }
     }
-    
+```
+
+```c# 
 public class LMSCourse
     {
         ///// <summary>
@@ -16,7 +19,9 @@ public class LMSCourse
         [Display(Name = "Automated Course")]
         public bool IsAutomated { get; set; }
     }
-    
+```
+
+```c#
 public class LMSTestQuestion
     {
         [Display(Name = "Wrong String 4")]
@@ -45,15 +50,18 @@ public class LMSTestQuestion
         ##REMOVE ESSAY
         public string Essay { get; set; }
     }
-    
+```    
+
+```c#
 public class ApplicationUser
     {
         public bool DarkMode { get; set; }
     }
-    
+```    
     
 #New Models
 
+```c#
 public class AutomatedCurrentCourse
     {
         /// <summary>
@@ -85,12 +93,12 @@ public class AutomatedCurrentCourse
 
 
 	/// <summary>
-        /// Foreign key to relate to the LMSPage table
-        /// </summary>
-        public int PageId { get; set; }
+	/// Foreign key to relate to the LMSPage table
+	/// </summary>
+	public int PageId { get; set; }
 
 
-        public bool ProgressWarningMessage { get; set; }
+	public bool ProgressWarningMessage { get; set; }
 
 
 	public bool CourseProgressBar { get; set; }
@@ -104,8 +112,9 @@ public class AutomatedCurrentCourse
 
         public DateTime LastActive { get; set; }
     }
-    
-    
+```  
+  
+```c#
 public class AutomatedRegistrationCurrentCourse
     {
         /// <summary>
@@ -140,8 +149,9 @@ public class AutomatedRegistrationCurrentCourse
         {
         }
     }
-    
-    
+```
+
+```c#    
 public class DiscussionThread
     {
         /// <summary>
@@ -180,8 +190,9 @@ public class DiscussionThread
         
         public bool IsArchived { get; set; }
     }
-    
-    
+```
+
+```c# 
 public class DiscussionReply
     {
         /// <summary>
@@ -214,3 +225,4 @@ public class DiscussionReply
 
         public DateTime Submitted { get; set; }
     }
+```
